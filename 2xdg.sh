@@ -15,5 +15,9 @@ cp -r my/downloads/clone/config/.config/{bash,i3lock-color,kitty,npm,picom,rofi,
 sudo cp my/downloads/clone/config/etc/profile.d/* /etc/profile.d/
 sudo cp my/downloads/clone/config/etc/bash/bashrc.d/second.bashrc /etc/bash/bashrc.d/
 
+echo "=====:=====:===== Remove .viminfo & Source bashrc bash_profile =====:=====:====="
 rm .viminfo
+source .config/bash/bashrc
+source .config/bash/bash_profile
+
 echo "=====:=====:===== Pls Relog :) =====:=====:====="
