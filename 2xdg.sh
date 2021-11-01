@@ -8,8 +8,6 @@ mv .config/bash/.bash_profile .config/bash/bash_profile
 mv .config/bash/.bashrc .config/bash/bashrc
 
 echo "=====:=====:===== Update XDG User Dirs & Clone My Config =====:=====:====="
-xdg-user-dirs-update
-mkdir my/downloads/clone
 cd my/downloads/clone
 git clone https://github.com/iNeobee/config
 cd
