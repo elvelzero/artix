@@ -14,4 +14,6 @@ cd
 cp -r my/downloads/clone/config/.config/{bash,i3lock-color,kitty,npm,picom,rofi,vim,wgetrc,X11,,xmobar,xmonad,zathura} .config/
 sudo cp my/downloads/clone/config/etc/profile.d/* /etc/profile.d/
 sudo cp my/downloads/clone/config/etc/bash/bashrc.d/second.bashrc /etc/bash/bashrc.d/
+
+rm .viminfo
 echo "=====:=====:===== Pls Relog :) =====:=====:====="
