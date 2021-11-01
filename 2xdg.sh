@@ -12,6 +12,7 @@ cd my/downloads/clone
 git clone https://github.com/iNeobee/config
 cd
 cp -r my/downloads/clone/config/.config/{bash,i3lock-color,kitty,npm,picom,rofi,vim,wgetrc,X11,,xmobar,xmonad,zathura} .config/
+echo "=====:=====:===== Copy things to /etc/{profile.d/,bash/bashrc.d/} =====:=====:====="
 sudo cp my/downloads/clone/config/etc/profile.d/* /etc/profile.d/
 sudo cp my/downloads/clone/config/etc/bash/bashrc.d/second.bashrc /etc/bash/bashrc.d/
 
@@ -20,4 +21,4 @@ rm .viminfo
 source .config/bash/bashrc
 source .config/bash/bash_profile
 
-echo "=====:=====:===== Pls Relog :) =====:=====:====="
+echo "=====:=====:===== Pls Relog & remove .bash_history file :) =====:=====:====="
