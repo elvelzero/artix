@@ -6,7 +6,7 @@ cd my/downloads/clone/
 git clone https://aur.archlinux.org/aura-bin.git
 git clone https://aur.archlinux.org/vim-git.git
 echo "=====:=====:===== Install aura AUR Helper =====:=====:====="
-cd aura-bin
+cd aura-bin/
 makepkg -si
 
 cd
