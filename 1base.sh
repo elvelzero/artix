@@ -19,7 +19,7 @@ touch /etc/sysctl.d/99-swappiness.conf
 echo "vm.swappiness=10" >> /etc/sysctl.d/99-swappiness.conf
 
 # Timezone
-echo "Confiure Timezone"
+echo "Configure Timezone"
 ln -sf /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 hwclock --systohc
 
