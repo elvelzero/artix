@@ -41,23 +41,23 @@ pacman-key --populate archlinux
 echo "" >> /etc/pacman.conf
 echo "# ARCH LINUX" >> /etc/pacman.conf
 echo "# [core]" >> /etc/pacman.conf
-echo "# Include = /etc/pacman.d/mirrorlist-arch"
+echo "# Include = /etc/pacman.d/mirrorlist-arch" >> /etc/pacman.conf
 
 echo "" >> /etc/pacman.conf
 echo "[extra]" >> /etc/pacman.conf
-echo "Include = /etc/pacman.d/mirrorlist-arch"
+echo "Include = /etc/pacman.d/mirrorlist-arch" >> /etc/pacman.conf
 
 echo "" >> /etc/pacman.conf
 echo "[community]" >> /etc/pacman.conf
-echo "Include = /etc/pacman.d/mirrorlist-arch"
+echo "Include = /etc/pacman.d/mirrorlist-arch" >> /etc/pacman.conf
 
 echo "" >> /etc/pacman.conf
 echo "# [multilib]" >> /etc/pacman.conf
-echo "# Include = /etc/pacman.d/mirrorlist-arch"
+echo "# Include = /etc/pacman.d/mirrorlist-arch" >> /etc/pacman.conf
 
 echo "" >> /etc/pacman.conf
 echo "# UNIVERSE" >> /etc/pacman.conf
-echo "Server = https://universe.artixlinux.org/$arch"
+echo "Server = https://universe.artixlinux.org/$arch" >> /etc/pacman.conf
 
 # Base packages
 pacman -Syu --needed grub efibootmgr networkmanager{,-runit} ufw{,-runit} alsa-utils pulseaudio{,-alsa} bash-completion xdg-{utils,user-dirs} bat htop lsd neofetch
