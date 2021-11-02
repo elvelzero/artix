@@ -98,6 +98,8 @@ EDITOR=vim visudo
 
 echo "=====:=====:===== Copy Scripts To User Home Dirs =====:=====:====="
 cp -r /tmp/artix /home/user/
+chown -R user:user /home/user/artix/
 
 echo "=====:=====:===== Things Left =====:=====:====="
 echo "         exit umount & reboot. DONE :)         "
+echo "=====:=====:===== ----------- =====:=====:====="
