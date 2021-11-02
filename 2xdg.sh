@@ -1,5 +1,12 @@
 #!/bin/bash
 
+echo "=====:=====:===== Enabling ufw & NetworkManager =====:=====:====="
+sudo ln -s /etc/runit/sv/ufw /run/runit/service/ufw
+sudo ln -s /etc/runit/sv/NetworkManager /run/runit/service/NetworkManager
+
+sudo ufw enable
+sudo ufw status verbose
+
 echo "=====:=====:===== Make XDG Base Dirs & Move Some Items =====:=====:====="
 mkdir -p ~/{.cache/{xmonad,thumbnails/{fail,large,normal,x-large,xx-large}},.config/{android,bash,java,xmonad,xmobar,zsh},.local/{share/xmonad,state/bash}}
 mv .bash* .config/bash/
@@ -8,6 +15,8 @@ mv .config/bash/.bash_profile .config/bash/bash_profile
 mv .config/bash/.bashrc .config/bash/bashrc
 
 echo "=====:=====:===== Update XDG User Dirs & Clone My Config =====:=====:====="
+xdg-user-dirs-update
+mkdir my/downloads/clone
 cd my/downloads/clone
 git clone https://github.com/iNeobee/config
 cd
