@@ -98,7 +98,7 @@ EDITOR=vim visudo
 
 echo "=====:=====:===== Copy Scripts To User Home Dirs =====:=====:====="
 cp -r /tmp/artix /home/user/
-chown -R user:user /home/user/artix/
+chown -R user:user /home/user/artix
 ls -l /home/user/
 
 echo "=====:=====:===== Things Left =====:=====:====="
