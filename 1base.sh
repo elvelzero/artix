@@ -96,5 +96,16 @@ echo "=====:=====:===== Change Your User Password =====:=====:====="
 passwd user
 EDITOR=vim visudo
 
+su user
+cd
+xdg-user-dirs-update
+mkdir my/downloads/clone
+cd my/downloads/clone
+git clone https://github.com/iNeobee/artix
+git clone https://github.com/iNeobee/config
+cd
+su -
+cd
+
 echo "=====:=====:===== Things Left =====:=====:====="
 echo "         exit umount & reboot. DONE :)         "
