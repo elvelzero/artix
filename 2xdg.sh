@@ -1,5 +1,12 @@
 #!/bin/bash
 
+echo "=====:=====:===== Enabling ufw & NetworkManager =====:=====:====="
+sudo ln -s /etc/runit/sv/NetworkManager /run/runit/service/NetworkManager
+sudo ln -s /etc/runit/sv/ufw /run/runit/service/ufw
+
+sudo ufw enable
+sudo ufw status verbose
+
 echo "=====:=====:===== Make XDG Base Dirs & Move Some Items =====:=====:====="
 mkdir -p ~/{.cache/{xmonad,thumbnails/{fail,large,normal,x-large,xx-large}},.config/{android,bash,java,xmonad,xmobar,zsh},.local/{share/xmonad,state/bash}}
 mv .bash* .config/bash/
