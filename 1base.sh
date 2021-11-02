@@ -96,14 +96,18 @@ echo "=====:=====:===== Change Your User Password =====:=====:====="
 passwd user
 EDITOR=vim visudo
 
+echo "=====:=====:===== Switch to User =====:=====:====="
 su user
 cd
+echo "=====:=====:===== Update XDG User Dirs =====:=====:====="
 xdg-user-dirs-update
+echo "=====:=====:===== Cloning My Config =====:=====:====="
 mkdir my/downloads/clone
 cd my/downloads/clone
 git clone https://github.com/iNeobee/artix
 git clone https://github.com/iNeobee/config
 cd
+echo "=====:=====:===== Switch to Root Back =====:=====:====="
 su -
 cd
 
