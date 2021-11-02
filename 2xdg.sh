@@ -26,8 +26,7 @@ echo "=====:=====:===== Copying things to /etc/{profile.d/,bash/bashrc.d/} =====
 sudo cp my/downloads/clone/config/etc/profile.d/* /etc/profile.d/
 sudo cp my/downloads/clone/config/etc/bash/bashrc.d/second.bashrc /etc/bash/bashrc.d/
 
-echo "=====:=====:===== Remove .viminfo & Source bashrc bash_profile =====:=====:====="
-rm .viminfo
+echo "=====:=====:===== Don't Forget to Source bashrc & bash_profile =====:=====:====="
 source .config/bash/bashrc
 source .config/bash/bash_profile
 
